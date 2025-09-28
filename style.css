@@ -1,0 +1,87 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://static.wikia.nocookie.net/sanrio/images/9/9f/Hello_Kitty.jpg/revision/latest/scale-to-width-down/985?cb=20191128154539');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    color: #ff69b4;
+    text-shadow: 2px 2px #000;
+}
+
+.caixinha {
+    width: 250px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid #c71585;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    text-align: left;
+    color: #000;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid #ff69b4;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ff69b4;
+    color: rgb(16,16,16);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff1493;
+}
+
+.resultado {
+    font-weight: bold;
+    margin: 5px 0;
+    padding: 5px 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.decimal {
+    background-color: rgba(255, 105, 180, 0.3);
+    color: #000;
+    border: 2px solid #c71585;
+}
+
+.octal {
+    background-color: rgba(255, 182, 193, 0.3);
+    color: #000;
+    border: 2px solid #c71585;
+}
+
+.hexadecimal {
+    background-color: rgba(255, 20, 147, 0.3);
+    color: #000;
+    border: 2px solid #c71585;
+}
+
+.binario {
+    background-color: rgba(255, 105, 180, 0.5);
+    color: #000;
+    border: 2px solid #c71585;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giovana's Machine</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="caixinha">
+    <h3>Giovana's Machine</h3>
+</div>
+
+<div class="caixinha">
+    <p>Decimal:</p>
+    <input id="input_decimal" type="text">
+    <button onclick="converterDecimal()">Converter</button>
+    <div id="mensagem_decimal" class="resultado decimal"></div>
+</div>
+
+<div class="caixinha">
+    <p>Octal:</p>
+    <input id="input_octal" type="text">
+    <button onclick="converterOctal()">Converter</button>
+    <div id="mensagem_octal" class="resultado octal"></div>
+</div>
+
+<div class="caixinha">
+    <p>Hexadecimal:</p>
+    <input id="input_hexa" type="text">
+    <button onclick="converterHexa()">Converter</button>
+    <div id="mensagem_hexa" class="resultado hexadecimal"></div>
+</div>
+
+<div class="caixinha">
+    <p>Binário:</p>
+    <input id="input_binario" type="text">
+    <button onclick="converterBinario()">Converter</button>
+    <div id="mensagem_binario" class="resultado binario"></div>
+</div>
+</body>
+
+</html>
+
+<script>
+function converterDecimal() {
+    var decimal = Number(input_decimal.value);
+    mensagem_decimal.innerHTML = `Octal: ${decimal.toString(8)}<br>
+    Hexadecimal: ${decimal.toString(16)}<br>
+    Binário: ${decimal.toString(2)}`;
+}
+
+function converterOctal() {
+    var octalC = parseInt(input_octal.value, 8);
+    mensagem_octal.innerHTML = `Decimal: ${octalC.toString(10)}<br>
+    Hexadecimal: ${octalC.toString(16)}<br>
+    Binário: ${octalC.toString(2)}`;
+}
+
+function converterHexa() {
+    var hexaC = parseInt(input_hexa.value, 16);
+    mensagem_hexa.innerHTML = `Decimal: ${hexaC.toString(10)}<br>
+    Octal: ${hexaC.toString(8)}<br>
+    Binário: ${hexaC.toString(2)}`;
+}
+
+function converterBinario() {
+    var binarioC = parseInt(input_binario.value, 2);
+    mensagem_binario.innerHTML = `Decimal: ${binarioC.toString(10)}<br>
+    Octal: ${binarioC.toString(8)}<br>
+    Hexadecimal: ${binarioC.toString(16)}`;
+}
+
+
+</script>
